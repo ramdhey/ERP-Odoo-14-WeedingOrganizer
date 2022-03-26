@@ -6,7 +6,7 @@ class KursiTamu(models.Model):
     _description = 'Data tentang kursi tamu dan harganya'
 
     name = fields.Char(string='Name')
-    tipe = fields.Selection(string='Tipe Kursi', selection=[('plastik','Plastik'), ('stainless','Stainless')])
+    tipe = fields.Selection(string='Tipe Kursi', selection=[('plastik','Plastik'), ('besi','Besi'),  ('stainless','Stainless')])
     stok = fields.Integer(string='Stok Kursi')
     harga = fields.Integer(string='Harga Sewa per Unit')
     

@@ -10,8 +10,8 @@
         Long description of module's purpose
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "Rama Dhea Yudhistira",
+    'website': "https://github.com/ramdhey",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/14.0/odoo/addons/base/data/ir_module_category_data.xml
@@ -34,6 +34,13 @@
         'views/kursipengantin_views.xml',
         'views/kursitamu_views.xml',
         'views/order_views.xml',
+        'views/pegawai_views.xml',
+        'views/customer_views.xml',
+        'views/pengembalian_views.xml',
+        'views/akunting_views.xml',
+        'report/report.xml',
+        'report/order_report.xml',
+        
     ],
     # only loaded in demonstration mode
     'demo': [

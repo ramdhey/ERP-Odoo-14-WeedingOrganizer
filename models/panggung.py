@@ -3,7 +3,7 @@ from odoo import api, fields, models
 
 class Panggung(models.Model):
     _name = 'wedding.panggung'
-    _description = 'Detail Panggung Pelaminan'
+    _description = 'New Description'
 
     name = fields.Char(string='Name', required=True)
     pelaminan_id = fields.Many2one(comodel_name='wedding.pelaminan', 
@@ -15,6 +15,8 @@ class Panggung(models.Model):
     
     bunga = fields.Selection(string='Tipe Bunga', selection=[('bunga mati', 'Bunga Dead'), ('bunga hidup', 'Bunga Life')])    
     accesories = fields.Char(string='Accesories Pelaminan')
+    
+    
     harga = fields.Integer(compute='_compute_harga', string='Harga')
     
     @api.depends('pelaminan_id','kursipengantin_id')

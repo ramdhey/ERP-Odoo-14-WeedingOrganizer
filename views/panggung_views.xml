@@ -47,6 +47,7 @@
                         <page string="DESKRIPSI KURSI PENGANTIN">
                             <field name="des_kursipengantin"/>
                         </page>
+                        
                     </notebook>
                 </sheet>
             </form>
